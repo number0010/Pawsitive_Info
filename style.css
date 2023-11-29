@@ -219,6 +219,7 @@ transition-duration: 1s;
 .contentWrapper{
     padding: 127px;
     width: 1700px;
+    display: contents;
 }
 .contentWrapper img{
     width: 513px;
