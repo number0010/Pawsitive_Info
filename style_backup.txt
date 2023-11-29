@@ -1,0 +1,465 @@
+main
+
+<style>
+        /*폰트 스타일 시작*/
+        /*
+        지마켓 산스
+        -Bold
+        -Medium
+        -Light
+        */
+
+        @font-face {
+            font-family: 'Dovemayo_gothic';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSansBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSansLight';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .fsGmk40pxBold{
+            font-family: 'GmarketSansBold';
+            font-size: 40px;
+        }
+        .fsGmk30pxBold{
+            font-family: 'GmarketSansMedium';
+            font-size: 30px;
+        }
+        .fsGmk20pxBold{
+            font-family: 'GmarketSansBold';
+            font-size: 20px;
+        }
+        .fsGmk17pxBold{
+            font-family: 'GmarketSansBold';
+            font-size: 17px;
+        }
+        .fsGmk16pxLight{
+            font-family: 'GmarketSansLight';
+            font-size: 16px;
+        }
+        .fsGmk16pxLight{
+            font-family: 'GmarketSansLight';
+            font-size: 16px;
+        }
+
+        .test{
+            font-family: 'Dovemayo_gothic';
+            font-style: normal;
+        }
+
+        .fsdmy70pxRegular{
+            font-family: 'Dovemayo_gothic';
+            font-size: 70px;
+            color: #272525;
+        }
+        .fsdmy30pxRegular{
+            font-family: 'Dovemayo_gothic';
+            font-size: 30px;
+        }
+        .fsdmy20pxRegular{
+            font-family: 'Dovemayo_gothic';
+            font-size: 20px;
+        }
+        .fsdmy50pxRegular{
+            font-family: 'Dovemayo_gothic';
+            font-size: 50px;
+        }
+        /*폰트 스타일 끝*/
+        /*헤더 스타일 시작*/
+        
+        body
+        {
+            text-align: center;
+            position: relative;
+ 
+        }
+        .plate{
+            width: 1700px;
+            display: inline;
+
+        }
+        img#logo{
+            background-color: pink;
+            width: 384px;
+            height: 384px;
+            padding: 0px;
+
+        }
+        /*네비게이터 스타일 시작*/
+        *{padding:0;margin:0}
+        li{list-style:none}
+        a{text-decoration:none;font-size:14px}
+
+        .menu {
+        width: 1700px;
+        overflow: hidden;
+        margin: 10px auto;
+        display: inline-flex;
+        justify-content: center;
+        background-color: #5778ff;
+        
+        }
+
+        .menu > li {
+        width: 16%; /*20*5=100%*/
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        
+
+        }
+
+        .menu a {
+        color: #fff;
+        width: 1700px;
+        
+        }
+
+        .submenu > li {
+        line-height: 50px;
+        background-color: #94a9ff;
+        }
+
+        .submenu {
+        height: 0; /*ul의 높이를 안보이게 처리*/
+        overflow: hidden;
+        position: absolute;
+        z-index: 999;
+        width: 272.2px;
+        }
+
+        .menu > li:hover {
+        background-color: #94a9ff;
+        transition-duration: 0.3s;
+        
+        }
+
+        .menu > li:hover .submenu {
+        height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+        transition-duration: 1s;
+        }
+        /*네비게이터 스타일 끝*/
+
+        /*헤더 스타일 끝*/
+
+        /*메인 스타일 시작*/
+        /*메인 베너 스타일 시작*/  
+
+        .mainBannerImg{
+            background-color: aqua;
+        }
+
+        .slider {
+            width: 100%;                                 
+            overflow: hidden;
+            position: relative;
+        }
+        .slide {
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+        .logo {
+            width: 100%;
+            height: auto;  
+
+        }
+        .slide>img{
+            width: 1700px;
+            height: 600px;
+        }
+        .contents{
+            margin: 50px;
+        }
+        #bannerLeftBtn{
+            position: absolute;
+            left: 30px;
+            display: none;
+        }
+        #bannerRightBtn{
+            position: absolute;
+            right: 30px;
+            display: none;
+        }
+        #mainBanner{
+            position: relative;
+            display: inline-block;
+            width: 1700px;
+        }
+
+        /*메인 베너 스타일 끝*/
+        /*메인 콘탠츠 스타일 시작*/
+        .contents ul{
+            text-align: center;
+            display: inline-block;
+            column-count: 3;
+        }
+        .contentWrapper{
+            padding: 127px;
+        }
+        /*메인 스타일 끝*/
+    </style>
+
+content
+
+<style>
+    /*폰트 스타일 시작*/
+    /*
+    지마켓 산스
+    -Bold
+    -Medium
+    -Light
+    */
+    .fsGmk40pxBold{
+        font-family: 'GmarketSansBold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 40px;
+    }
+    .fsGmk30pxBold{
+        font-family: 'GmarketSansMedium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30px;
+    }
+    .fsGmk20pxBold{
+        font-family: 'GmarketSansBold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+    }
+    .fsGmk17pxBold{
+        font-family: 'GmarketSansBold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 17px;
+    }
+    .fsGmk16pxLight{
+        font-family: 'GmarketSansLight';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px;
+    }
+    .fsGmk16pxLight{
+        font-family: 'GmarketSansLight';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .fsdmy80pxRegularRgb272525{
+        font-family: 'Dovemayo_gothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 80px;
+        color: #272525;
+    }
+
+    .fsdmy70pxRegularRgb272525{
+        font-family: 'Dovemayo_gothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 70px;
+        color: #272525;
+    }
+    .fsdmy30pxRegularRgbFFFFFF{
+        font-family: 'Dovemayo_gothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .fsdmy30pxRegularRgb000000{
+        font-family: 'Dovemayo_gothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30px;
+        color: #000000;
+    }
+    .fsdmy50pxRegularRgb000000{
+        font-family: 'Dovemayo-Medium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 50px;
+        color: #000000;
+    }
+    /*폰트 스타일 끝*/
+    /*헤더 스타일 시작*/
+    
+    body
+    {
+        text-align: center;
+        position: relative;
+
+    }
+    .plate{
+        width: 1260px;
+        display: inline-block;
+
+    }
+    img#logo{
+        background-color: pink;
+        width: 384px;
+        height: 384px;
+        padding: 0px;
+
+    }
+    /*네비게이터 스타일 시작*/
+    *{padding:0;margin:0}
+    li{list-style:none}
+    a{text-decoration:none;font-size:14px}
+
+    .menu {
+    width: 1260px;
+    overflow: hidden;
+    margin: 10px auto;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #5778ff;
+    
+    }
+
+    .menu > li {
+    width: 16%; /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    
+
+    }
+
+    .menu a {
+    color: #fff;
+    width: 1920px;
+    
+    }
+
+    .submenu > li {
+    line-height: 50px;
+    background-color: #94a9ff;
+    }
+
+    .submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    width: 201px;
+    }
+
+    .menu > li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.3s;
+    
+    }
+
+    .menu > li:hover .submenu {
+    height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+    }
+    /*네비게이터 스타일 끝*/
+
+    /*헤더 스타일 끝*/
+
+    /*메인 스타일 시작*/
+    /*메인 베너 스타일 시작*/  
+
+    .mainBannerImg{
+        background-color: aqua;
+    }
+
+    .slider {
+        width: 100%;                                 
+        overflow: hidden;
+        position: relative;
+    }
+    .slide {
+        float: left;
+        width: 100%;
+        position: relative;
+    }
+    .logo {
+        width: 100%;
+        height: auto;  
+
+    }
+    .slide>img{
+        width: 1920px;
+        height: 729px;
+    }
+    .contents{
+        margin: 50px;
+    }
+    #bannerLeftBtn{
+        position: absolute;
+        left: 30px;
+        display: none;
+    }
+    #bannerRightBtn{
+        position: absolute;
+        right: 30px;
+        display: none;
+    }
+    #mainBanner{
+        position: relative;
+        display: inline-block;
+        width: 1920px;
+    }
+
+    /*메인 베너 스타일 끝*/
+    /*메인 콘탠츠 스타일 시작*/
+    .contents ul{
+        text-align: center;
+        display: inline-block;
+        column-count: 3;
+    }
+    .contentWrapper{
+        padding: 127px;
+    }
+    /*메인 콘탠츠 스타일 끝*/
+    /*콘탠츠 스타일 시작*/
+    .mainTitle{
+        margin: 50px;
+    }
+    .subTitle{
+        margin-top: 370px;
+        display: block;
+        position: initial;
+        padding-right: 1000px;
+    }
+    .colorBar{
+        width: 15px;
+        height: 62px;
+        display: inline-block;
+        background: #3F8D28;
+    }
+    /*콘탠츠 스타일 끝*/
+    /*메인 스타일 끝*/
+</style>
