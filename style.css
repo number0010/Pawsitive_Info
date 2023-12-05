@@ -67,6 +67,10 @@
 }
 
 
+.fsdmy80pxRegular{
+    font-family: 'Dovemayo_gothic';
+    font-size: 80px;
+}
 .fsdmy60pxRegular{
     font-family: 'Dovemayo_gothic';
     font-size: 60px;
@@ -82,6 +86,10 @@
 .fsdmy20pxRegular{
     font-family: 'Dovemayo_gothic';
     font-size: 20px;
+}
+.fsdmy25pxRegular{
+    font-family: 'Dovemayo_gothic';
+    font-size: 25px;
 }
 .fsdmy50pxRegular{
     font-family: 'Dovemayo_gothic';
@@ -229,7 +237,7 @@ transition-duration: 1s;
 /*메인 콘탠츠 스타일 끝*/
 /*콘탠츠 스타일 시작*/
 .mainTitle{
-    margin: 50px;
+    margin: 0px;
 }
 .subTitle{
     margin-top: 370px;
