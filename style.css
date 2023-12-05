@@ -225,6 +225,12 @@ transition-duration: 1s;
     width: 1700px;
 }
 
+.backBtn{
+    position: absolute;
+    top: 519px;
+    right: 2035px;
+}
+
 /*메인 베너 스타일 끝*/
 /*메인 콘탠츠 스타일 시작*/
 .contents ul{
