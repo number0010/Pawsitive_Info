@@ -183,9 +183,9 @@ transition-duration: 1s;
 /*메인 스타일 시작*/
 /*메인 베너 스타일 시작*/  
 
-.mainBannerImg{
-    background-color: aqua;
-}
+/* .mainBannerImg{
+    
+} */
 
 .slider {
     width: 100%;                                 
@@ -211,13 +211,14 @@ transition-duration: 1s;
 }
 #bannerLeftBtn{
     position: absolute;
-    left: 30px;
-    display: none;
+    top: 270px;
+    left: 60px;
 }
 #bannerRightBtn{
     position: absolute;
-    right: 30px;
-    display: none;
+    top: 270px;
+    right: 60px;
+
 }
 #mainBanner{
     position: relative;
@@ -229,6 +230,16 @@ transition-duration: 1s;
     position: absolute;
     top: 504px;
     right: 1651px;
+}
+
+button{
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+a{
+    color :black
 }
 
 /*메인 베너 스타일 끝*/
