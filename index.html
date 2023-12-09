@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript">
-      var uAgent = navigator.userAgent.toLowerCase();
-      // 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트
-      var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce','nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
-      for (var i = 0; i < mobilePhones.length; i++){
-        if (uAgent.indexOf(mobilePhones[i]) != -1){
-          location.href="/mobile/home/main.do";
-        }
-      };
-    </script>
+      var UserAgent = navigator.userAgent; 
+      if (UserAgent.match(/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)
+      {
+        location.href = "mobile.html"; /* 모바일 홈페이지 경로 */
+      }
+      </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="logo.png" rel="shortcut icon" type="image/x-icon">
     <title>PawsitiveInfo</title>
