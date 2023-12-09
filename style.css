@@ -227,9 +227,10 @@ transition-duration: 1s;
 }
 
 .backBtn{
-    position: absolute;
-    top: 504px;
-    right: 1651px;
+    display: block;
+    position: fixed;
+    bottom: 1%;
+    right: 3%;
 }
 
 button{
